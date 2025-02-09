@@ -3,19 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube Audio Downloader</title>
+    <title>YouTube Video Downloader</title>
 </head>
 <body>
-    <h1>YouTube Audio Downloader</h1>
-    
-    <form method="POST" action="/">
-        <label for="url">Paste YouTube Video URL:</label>
+    <h1>YouTube Video Downloader</h1>
+
+    <form method="POST">
+        <label for="url">Enter YouTube URL:</label>
         <input type="text" id="url" name="url" required>
-        <button type="submit">Download Audio</button>
+
+        <div>
+            <label for="audio">Download Audio Only:</label>
+            <input type="radio" id="audio" name="download_option" value="audio" required>
+
+            <label for="video_audio">Download Video and Audio:</label>
+            <input type="radio" id="video_audio" name="download_option" value="video_audio">
+        </div>
+
+        <button type="submit">Download</button>
     </form>
 
     {% if message %}
-    <p>{{ message }}</p>
+        <p>{{ message }}</p>
     {% endif %}
 </body>
 </html>
