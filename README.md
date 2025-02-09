@@ -37,3 +37,11 @@
     <li><p><span style="font-weight: bold;">SQLite3:</span> Used to store a video's ID and to prevent duplicates by storing them into a database.</p></li>
     <li><p><span style="font-weight: bold;">ffmpeg:</span> Used to handle video and audio files, such as audio extraction.</p></li>
 </ul>
+
+
+
+## To Do List
+- [ ] Audio donwloader
+- [ ] Video Downloader
+- [ ] Download to the webbrowser instead of script
+- [ ] Host script somewhere tfor 24/7 access
